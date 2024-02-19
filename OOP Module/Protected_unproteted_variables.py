@@ -1,19 +1,23 @@
-class MyClass:
-    def __init__(self):
-        self.public_var = "I'm public!"  ## This is a public variable
-        self._semi_private_var = "I'm semi-private!"  ## This is a semi-private/"protected" variable
+class Vehicle:
+    def __init__(self, color, registration_number):
+        self.color = color  ## This is an unprotected variable
+        self._registration_number = registration_number  ## This is a semi-private/"protected" variable
 
-    def public_method(self):
-        return self.public_var
+    def get_color(self):
+        return self.color
 
-    def _semi_private_method(self):
-        return self._semi_private_var
+    def _get_registration_number(self):
+        return self._registration_number
 
-## Create an object of MyClass
-obj = MyClass()
+## Create an object of Vehicle
+car = Vehicle("Red", "XYZ 1234")
 
-## Accessing public variable
-print(obj.public_var)  ## Output: I'm public!
+## Accessing unprotected variable
+print(car.color)  ## Output: Red
 
-## Accessing public method
-print(obj.public_method())  ## Output: I'm public!
+## Accessing unprotected method
+print(car.get_color())  ## Output: Red
+
+## protected variables or semi-private variables/methods should not be accessed directly
+print(car._registration_number)  ## Output: XYZ 1234
+print(car._get_registration_number())  ## Output: XYZ 1234
