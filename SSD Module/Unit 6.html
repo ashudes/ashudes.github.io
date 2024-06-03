@@ -45,30 +45,32 @@
 <p>Linters are quite useful for analysing codes, bugs, and style errors. From my experience and some reading, it appears that cannot be relied upon for ensuring code security and functionality. Nonetheless, the use of linters is something I will continue to apply in my future coding projects.</p>        
         <details>
             <summary><h2>e-Portfolio Activity</h2></summary>
-            <h3>Collaborative Forum Post</h3>
-            <p><strong><span>What is an Ontology?</span></strong></p>
-<p><span>Ontology ** a structured representation of knowledge about a ******** domain. It ******** a ****** vocabulary that ********* the types of objects and concepts that exist, and their properties and relationships. Ontology is the core *** organizing a modern ecommerce application (Earley, 2024).</span></p>
-<p><span>Ontologies can **** ****** the ********** of system architectures by providing a structured *** organized approach ** describing and modelling the architecture. **** can help ******** the relationships among ************* components, the network, and the physical process, as the system *************** and ********** *** related <span>(Kn&ouml;&ouml;s Franz&eacute;n et al., 2019)</span>.</span></p>
-<p><span>** ontology, there are three fundamental components: class, instance, and property. A ***** ********** a concept ** ******** ****** a domain. An ******** is a specific realization or member of a class. A property ********* *** ************* between ********* or between classes and instances. It&rsquo;s important ** note **** ** ontology, ********** can ********* not only attributes (features ** a concept), but **** various types of relationships ******* concepts. Therefore, while a class can indeed be ********* ** properties that represent its features, properties ** an ontology *** also represent other types ** ************* (Sianturi, 2019; Ding et al., 2004).</span></p>
+            <h3>Exploring Linters</h3>
+            <p><strong><span>**** 6 Seminar: Exploring ******* to ******* Testing in Python</span></strong></p>
+<p><span>*** following questions **** be ********* ****** this week&rsquo;s seminar. These questions are provided ** *** &apos;</span><span><a href="https://www.my-course.co.uk/pluginfile.php/1119847/mod_book/chapter/12773/testing-with-python.zip"><strong><span>testing-with-python</span></strong></a><span>&apos; zip file with instructions ******** ** the &apos;</span><a href="https://www.my-course.co.uk/pluginfile.php/1119847/mod_book/chapter/12773/Unit%206%20Seminar%20-%20secure-software-and-systems-class-programming-activities-testing-with-python.pdf"><strong><span>Secure ******** Development</span></strong></a><span>&apos; *** file. These ********** should ** completed ** **** chosen Jupyter ******** workspace.</span></span></p>
+<p><strong><span>Question 1:</span></strong><span>Run styleLint.py.</span></p>
+<p id="yui_3_17_2_1_1717427379341_751"><span>What happens **** the code is run? Can *** ****** this code for a more favourable outcome? What amendments have you **** to the code?</span></p>
+<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835069.png" alt="image" height="210"></span></p>
+<p><strong><span>Answers:</span></strong><span>&nbsp;Indentation error ** reported, and I mo</span><span>****** code &ndash; ******* *** indentation.</span></p>
+<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img1717428350.png" alt="image" height="272"></span></p>
 <p><span>&nbsp;</span></p>
-<p><span>**** is ** ******** that is relevant to the online shopping ****** that I developed for summative assessment:</span></p>
-<ol>
-    <li><strong><span>Classes</span></strong><span>: User, Administrator, Product, ProductList, ShoppingCart, Order, Payment, Shipping, CLI (Command Line Interface), DataFile.</span></li>
-    <li><strong><span>Data Properties</span></strong><span>: These are attributes of the classes. *** example, a **** has a name, email, password, payment_details, and shipping_address. A ******* has a name and price. A ******** has a filename.</span></li>
-    <li><strong><span>Object Properties</span></strong><span>: These are relationships between different classes. For example, ** Administrator *** *** a Product ** a ProductList (add_product relationship). A ************ belongs ** a User (belongs_** relationship). An ***** is ********** with a ************ (associated_with relationship). A CLI ** associated **** a User (user_interface relationship). A DataFile ** associated **** a *********** (contains_products relationship).</span></li>
-    <li><strong><span>Functions/Methods</span></strong><span>: These could ** considered as actions ** the ontology. For example, the User class *** methods like&nbsp;</span><code><span>hash_password</span></code><span>&nbsp;and&nbsp;</span><code><span>check_password</span></code><span>. *** Administrator class has ******* like&nbsp;</span><code><span>add_product</span></code><span>&nbsp;and&nbsp;</span><code><span>remove_product</span></code><span>. *** *** ***** has ******* like&nbsp;</span><code><span>register</span></code><span>,&nbsp;</span><code><span>login</span></code><span>,&nbsp;</span><code><span>view_product_list</span></code><span>,&nbsp;</span><code><span>confirm_selection</span></code><span>,&nbsp;</span><code><span>after_selection</span></code><span>,&nbsp;</span><code><span>send_to_cart</span></code><span>, and&nbsp;</span><code><span>remove_product</span></code><span>.</span></li>
-</ol>
-<p><span>**** ontology ******** a structured ************** of the main entities ** ** online shopping system, their properties, and the relationships between them. It can **** in understanding *** system, designing new features, *** communicating about the system **** others.</span></p>
+<p><strong><span>Question 2</span></strong></p>
+<pre><span>pip install pylint</span></pre>
+<p><span>Run pylint on pylintTest.py</span></p>
+<p><span>****** each of the **** ****** returned. Can you ******* each of the errors identified by pylint?</span></p>
+<p id="yui_3_17_2_1_1717427379341_752"><span>****** correcting *** code errors, **** the pylintTest.** file **** a new name (** will ** ****** ***** ** the next question).</span></p>
+<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835091.png" alt="image" height="166"></span></p>
+<p><strong><span>Answers</span></strong><span>: I c</span><span>orrected&nbsp;</span><span>the following&nbsp;</span><span>errors</span><span>: 1) included parentheses in the print function; 2) changed raw_input to ***** (a recognized ****** in the version of Python **** I am using).</span></p>
+<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835041.png" alt="image" height="336"></span></p>
+<p><strong><span>Question 3</span></strong><strong><span>:</span></strong></p>
+<pre><code><span>pip install flake8</span></code></pre>
+<p><span>Run&nbsp;</span><code><span>flake8</span></code><code><span>&nbsp;</span></code><span>on pylintTest.py</span></p>
+<p><span>Review the errors returned. ** what way does this error ******* differ from the error ******* ******** ** pylint?</span></p>
+<p><span>Run flake8 on metricTest.py. *** you correct **** of *** errors returned by flake8? **** ********** have you made ** the code?</span></p>
+<p><strong><span>Answers</span></strong><span>:&nbsp;</span><span>&nbsp;</span><span>Both ****** from ****** and flake8 are ******** the lack of *********** ** **** line 26 containing &lsquo;print encoded&rsquo;.</span></p>
 <p><span>&nbsp;</span></p>
-<p><strong><span>References</span></strong></p>
-<p><span>Ding, Y., D. Fensel, Klein, M., B. Omelayenko and Schulten, E. (2004). The **** of ********** in eCommerce. <em>Springer eBooks</em>, pp.593&ndash;615. doi:https://doi.org/10.1007/978-3-540-24750-0_30.</span></p>
 <p><span>&nbsp;</span></p>
-<p><span>Earley, S. (n.d.). <em>Ontologies for ********* *************** - ***** ****** taxonomies</em>. [online] Available at: https://www.earley.com/insights/ontologies-ecommerce-personalization-going-beyond-taxonomies#:~:text=The%20role%20of%20ontologies&amp;text=Ontologies%20are%20the%20source%2*** [Accessed 2 Jun. 2024].</span></p>
 <p><span>&nbsp;</span></p>
-<p><span>&zwnj;Kn&ouml;&ouml;s Franz&eacute;n, L., Staack, I., Jouannet, C. *** Krus, P. (2019). ** Ontological Approach to ****** ** Systems Engineering in Product Development. <em>Proceedings of *** 10th Aerospace Technology Congress, October 8-9, 2019, Stockholm, Sweden</em>. [online] doi:https://doi.org/10.3384/ecp19162004.</span></p>
-<p><span>&nbsp;</span></p>
-<p><span>Sianturi, R.J.P. (2019). <em>Ontology-based Model for E-commerce ****** Engines Optimization</em>. [online] Medium. Available at: https://medium.com/@rijenjuni/ontology-based-model-for-e-commerce-search-engines-optimization-e3c3e3a3a597 [******** 2 Jun. 2024].&zwnj;</span></p>
-<p><strong><span>&nbsp;</span></strong></p>
-<div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Created with <a href="https://wordtohtml.net/">WordToHTML.net</a> trial.</div>    </div>
-</body>
+<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835048.png" alt="A screen shot of a computer programDescription automatically generated" height="352"></span></p>
+<div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Created with <a href="https://wordtohtml.net/">WordToHTML.net</a> trial.</div></body>
 </html>
