@@ -46,31 +46,36 @@
         <details>
             <summary><h2>e-Portfolio Activity</h2></summary>
             <h3>Exploring Linters</h3>
-            <p><strong><span>**** 6 Seminar: Exploring ******* to ******* Testing in Python</span></strong></p>
-<p><span>*** following questions **** be ********* ****** this week&rsquo;s seminar. These questions are provided ** *** &apos;</span><span><a href="https://www.my-course.co.uk/pluginfile.php/1119847/mod_book/chapter/12773/testing-with-python.zip"><strong><span>testing-with-python</span></strong></a><span>&apos; zip file with instructions ******** ** the &apos;</span><a href="https://www.my-course.co.uk/pluginfile.php/1119847/mod_book/chapter/12773/Unit%206%20Seminar%20-%20secure-software-and-systems-class-programming-activities-testing-with-python.pdf"><strong><span>Secure ******** Development</span></strong></a><span>&apos; *** file. These ********** should ** completed ** **** chosen Jupyter ******** workspace.</span></span></p>
-<p><strong><span>Question 1:</span></strong><span>Run styleLint.py.</span></p>
-<p id="yui_3_17_2_1_1717427379341_751"><span>What happens **** the code is run? Can *** ****** this code for a more favourable outcome? What amendments have you **** to the code?</span></p>
-<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835069.png" alt="image" height="210"></span></p>
-<p><strong><span>Answers:</span></strong><span>&nbsp;Indentation error ** reported, and I mo</span><span>****** code &ndash; ******* *** indentation.</span></p>
-<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img1717428350.png" alt="image" height="272"></span></p>
-<p><span>&nbsp;</span></p>
-<p><strong><span>Question 2</span></strong></p>
-<pre><span>pip install pylint</span></pre>
-<p><span>Run pylint on pylintTest.py</span></p>
-<p><span>****** each of the **** ****** returned. Can you ******* each of the errors identified by pylint?</span></p>
-<p id="yui_3_17_2_1_1717427379341_752"><span>****** correcting *** code errors, **** the pylintTest.** file **** a new name (** will ** ****** ***** ** the next question).</span></p>
-<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835091.png" alt="image" height="166"></span></p>
-<p><strong><span>Answers</span></strong><span>: I c</span><span>orrected&nbsp;</span><span>the following&nbsp;</span><span>errors</span><span>: 1) included parentheses in the print function; 2) changed raw_input to ***** (a recognized ****** in the version of Python **** I am using).</span></p>
-<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835041.png" alt="image" height="336"></span></p>
-<p><strong><span>Question 3</span></strong><strong><span>:</span></strong></p>
-<pre><code><span>pip install flake8</span></code></pre>
-<p><span>Run&nbsp;</span><code><span>flake8</span></code><code><span>&nbsp;</span></code><span>on pylintTest.py</span></p>
-<p><span>Review the errors returned. ** what way does this error ******* differ from the error ******* ******** ** pylint?</span></p>
-<p><span>Run flake8 on metricTest.py. *** you correct **** of *** errors returned by flake8? **** ********** have you made ** the code?</span></p>
-<p><strong><span>Answers</span></strong><span>:&nbsp;</span><span>&nbsp;</span><span>Both ****** from ****** and flake8 are ******** the lack of *********** ** **** line 26 containing &lsquo;print encoded&rsquo;.</span></p>
-<p><span>&nbsp;</span></p>
-<p><span>&nbsp;</span></p>
-<p><span>&nbsp;</span></p>
-<p><span><img width="537" src="https://myfiles.space/user_files/219206_41b120c0aa5be131/219206_custom_files/img171742835048.png" alt="A screen shot of a computer programDescription automatically generated" height="352"></span></p>
-<div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Created with <a href="https://wordtohtml.net/">WordToHTML.net</a> trial.</div></body>
+            <!DOCTYPE html>
+<html>
+<head>
+    <title>Unit 6 Seminar: Exploring Linters to Support Testing in Python</title>
+</head>
+<body>
+    <h1>Unit 6 Seminar: Exploring Linters to Support Testing in Python</h1>
+    <p>The following questions will be discussed during this week’s seminar. These questions are provided in the 'testing-with-python' zip file with instructions provided in the 'Secure Software Development' PDF file. These activities should be completed on your chosen Jupyter Notebook workspace.</p>
+    <h2>Question 1: Run styleLint.py</h2>
+    <p>What happens when the code is run? Can you modify this code for a more favourable outcome? What amendments have you made to the code?</p>
+    <img src="SSD Module/Image1_exploringLinters.png" alt="Image1">
+    <h3>Answers:</h3>
+    <p>Indentation error is reported, and I modified code – changed the indentation.</p>
+    <img src="SSD Module/Image2_exploringLinters.png" alt="Image2">
+    <h2>Question 2</h2>
+    <p>pip install pylint</p>
+    <p>Run pylint on pylintTest.py</p>
+    <p>Review each of the code errors returned. Can you correct each of the errors identified by pylint?</p>
+    <p>Before correcting the code errors, save the pylintTest.py file with a new name (it will be needed again in the next question).</p>
+    <img src="SSD Module/Image3_exploringLinters.png" alt="Image3">
+    <h3>Answers:</h3>
+    <p>I corrected the following errors: 1) included parentheses in the print function; 2) changed raw_input to input (a recognized syntax in the version of Python that I am using).</p>
+    <img src="SSD Module/Image4_exploringLinters.png" alt="Image4">
+    <h2>Question 3:</h2>
+    <p>pip install flake8</p>
+    <p>Run flake8 on pylintTest.py</p>
+    <p>Review the errors returned. In what way does this error message differ from the error message returned by pylint?</p>
+    <p>Run flake8 on metricTest.py. Can you correct each of the errors returned by flake8? What amendments have you made to the code?</p>
+    <h3>Answers:</h3>
+    <p>Both errors from pylint and flake8 are pointing the lack of parenthesis on code line 26 containing ‘print encoded’.</p>
+    <img src="SSD Module/Image5_exploringLinters.png" alt="Image5">
+</body>
 </html>
